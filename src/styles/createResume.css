@@ -1,0 +1,43 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-block: 1px 20px;
+}
+
+.template-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.resume-img {
+  height: calc(95vmin - 50px);
+  min-height: 400px;
+  width: auto;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.645);
+  cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+}
+.resume-img:hover {
+  z-index: 12312;
+  scale: 1.02;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.616);
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 0.7rem;
+  }
+}

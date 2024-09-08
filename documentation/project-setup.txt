@@ -1,0 +1,31 @@
+Step by Step project setup.
+
+1. Install Node.js & npm
+
+
+2. Initialize npm in the Project
+npm init -y
+
+
+3. Install TypeScript
+npm install typescript --save-dev
+
+the following command adds TS as a development dependency.
+
+
+4. Set Up TypeScript Configuration (tsconfig.json)
+npx tsc --init
+
+tsconfig.json Imp: changes.
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "es6",
+      "outDir": "./src/aap.js",
+      "rootDir": "./src/aap.ts",
+      "strict": true
+    }
+  }
+
+  5. Watch Mode for Auto Compilation:
+  npx tsc --watch
